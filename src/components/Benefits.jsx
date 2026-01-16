@@ -5,6 +5,8 @@ import { benefits } from "../constants";
 import { BottomLine } from "./design/Hero";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
+import ClipPath from "../assets/svg/ClipPath"
+
 const Benefits = () => {
   return (
     <Section id="features">
@@ -17,11 +19,11 @@ const Benefits = () => {
           {benefits.map((item) => (
             <div
               key={item.id}
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="block mx-auto relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[22rem]"
               style={{ backgroundImage: `url("${item.backgroundUrl}")` }}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{item.title}</h5>
+                <h5 className="h4 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
                   <img
@@ -53,6 +55,7 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
+              <ClipPath />
             </div>
           ))}
         </div>

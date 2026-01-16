@@ -298,6 +298,7 @@ export const benefits = [
     backgroundUrl: benefitCard6,
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+    light: true,
   },
 ];
 
