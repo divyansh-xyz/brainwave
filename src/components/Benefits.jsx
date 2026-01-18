@@ -55,11 +55,11 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-              <ClipPath />
             </div>
           ))}
         </div>
       </div>
+      <ClipPath />
       <BottomLine />
     </Section>
   );

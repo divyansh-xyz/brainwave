@@ -4,6 +4,7 @@ import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
 import { LeftLine, RightLine } from "./design/Pricing";
+import PricingList from "./PricingList";
 
 const Pricing = () => {
   return (
@@ -26,6 +27,26 @@ const Pricing = () => {
               alt="stars"
             />
           </div>
+        </div>
+
+        <Heading
+          tag="Get started with Brainwave"
+          title="Pay once, use forever"
+        />
+
+        <div className="relative">
+          <PricingList />
+          <LeftLine />
+          <RightLine />
+        </div>
+
+        <div className="flex justify-center mt-10">
+          <a
+            href="/pricing"
+            className="text-xs font-code font-bold tracking-wider uppercase border-b"
+          >
+            See the full details
+          </a>
         </div>
       </div>
     </Section>
